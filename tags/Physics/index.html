@@ -25,26 +25,26 @@
   </script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/tags/Physics/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/tags/Physics/">
 
 
 <script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
+    isHome : false,
     isPost : false,
     lang   : 'en'
   };
 </script>
-<title>Hexo</title>
+<title>Tag: Physics | Hexo</title>
   
 
 
@@ -201,88 +201,50 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
-
-    
+    <div class="main-inner tag posts-collapse">
 
 
-<div class="post-block">
   
   
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/28/%E5%9B%9B%E7%AB%AF%E7%BA%BF%E6%80%A7%E7%94%B5%E9%98%BB%E7%BD%91%E7%BB%9C%E7%9A%84%E7%AD%89%E6%95%88%E5%8F%98%E6%8D%A2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/03/28/%E5%9B%9B%E7%AB%AF%E7%BA%BF%E6%80%A7%E7%94%B5%E9%98%BB%E7%BD%91%E7%BB%9C%E7%9A%84%E7%AD%89%E6%95%88%E5%8F%98%E6%8D%A2/" class="post-title-link" itemprop="url">四端线性电阻网络的等效变换</a>
+  
+  <div class="post-block">
+    <div class="post-content">
+      <div class="collection-title">
+        <h2 class="collection-header">Physics
+          <small>Tag</small>
         </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2021-03-28 21:44:37 / Modified: 21:48:33" itemprop="dateCreated datePublished" datetime="2021-03-28T21:44:37+08:00">2021-03-28</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h4 id="Y-Delta-变换的推广"><a href="#Y-Delta-变换的推广" class="headerlink" title="$Y-\Delta$ 变换的推广"></a>$Y-\Delta$ 变换的推广</h4><p>引入：三端线性电阻网络的等效变换</p>
-<script type="math/tex; mode=display">Y \rightarrow \Delta:\ \begin{cases} R_{12}=\frac{R_1R_2+R_2R_3+R_3R_1}{R_3} \\ R_{23}=\frac{R_1R_2+R_2R_3+R_3R_1}{R_1}\\ R_{13}=\frac{R_1R_2+R_2R_3+R_3R_1}{R_2} \end{cases}</script><script type="math/tex; mode=display">\Delta \rightarrow Y:\ \begin{cases} R_{1}=\frac{R_{12}R_{13}}{R_{12}+R_{23}+R_{13}} \\ R_{2}=\frac{R_{12}R_{23}}{R_{12}+R_{23}+R_{13}}\\ R_{3}=\frac{R_{13}R_{23}}{R_{12}+R_{23}+R_{13}} \end{cases}</script><p>四端线性电阻网络的等效变换：</p>
-<p><img src="IMG_0385.jpg" alt="图片"></p>
-<p>等效条件：已知 $\varphi_i(i=1,2,3,4)$（各点电势），使 $I_i(i=1,2,3,4)$ （各点流出的总电流）</p>
-<p>在左图中，有方程：</p>
-<script type="math/tex; mode=display">\begin{cases} \varphi_1 - \varphi_2 = I_1R_1-I_2R_2\\ \varphi_1 - \varphi_3 = I_1R_1-I_3R_3\\ \varphi_1 - \varphi_4 = I_1R_1-I_4R_4\\ I_1+I_2+I_3+I_4=0\end{cases}</script><p>由前三个方程得：</p>
-<script type="math/tex; mode=display">I_2=I_1 \cdot \frac{R_1}{R_2}+\frac{\varphi_2-\varphi_1}{R_2} \\ I_3=I_1 \cdot \frac{R_1}{R_3}+\frac{\varphi_3-\varphi_1}{R_3} \\ I_4=I_1 \cdot \frac{R_1}{R_4}+\frac{\varphi_4-\varphi_1}{R_4}</script><p>代入第四个方程得：</p>
-<script type="math/tex; mode=display">I_1(1+\frac{R_1}{R_2} +\frac{R_1}{R_3} +\frac{R_1}{R_4})+\frac{\varphi_2-\varphi_1}{R_2} +\frac{\varphi_3-\varphi_1}{R_3} +\frac{\varphi_4-\varphi_1}{R_4} =0</script><p>解得：</p>
-<script type="math/tex; mode=display">I_1=\frac{\varphi_1(R_2R_3+R_2R_4+R_3R_4)-\varphi_2R_3R_4-\varphi_3R_2R_4-\varphi_4R_2R_3}{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}</script><p>在右图中：</p>
-<script type="math/tex; mode=display">\begin{cases}\varphi_1-\varphi_2=I_{12}R_{12}\\ \varphi_1-\varphi_3=I_{13}R_{13}\\ \varphi_4-\varphi_1=I_{41}R_{41}\end{cases}</script><p>解得：</p>
-<script type="math/tex; mode=display">I_1=\varphi_1(\frac{1}{R_{12}}+\frac{1}{R_{13}}+\frac{1}{R_{41}})-\frac{\varphi_2}{R_{12}}-\frac{\varphi_3}{R_{13}}-\frac{\varphi_4}{R_{41}}</script><p>由等效条件，应有 $\forall \varphi_i(i=1,2,3,4),I_1$ 在左、右图中相等。</p>
-<p>故有对于相同的 $\varphi_i(i=1,2,3,4)$ 在左右图 $I_1$ 中对应的系数相同，即：</p>
-<script type="math/tex; mode=display">\begin{cases} \frac{R_2R_3+R_2R_4+R_3R_4}{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}= \frac{1}{R_{12}}+\frac{1}{R_{13}}+\frac{1}{R_{41}}\\ -\frac{R_3R_4}{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}=-\frac{1}{R_{12}}\\ -\frac{R_2R_4}{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}=-\frac{1}{R_{13}}\\ -\frac{R_2R_3}{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}=-\frac{1}{R_{41}}\end{cases}</script><p>可解得：</p>
-<script type="math/tex; mode=display">R_{12}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_3R_4}\\ R_{13}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_2R_4} \\ R_{41}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_2R_3}</script><p>同理可得：</p>
-<script type="math/tex; mode=display">R_{23}= \frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_1R_4} \\ R_{42}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_1R_3} \\ R_{34}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_1R_2}</script><p>$Y \rightarrow \Delta$ 变换推广到 $n$ 端：</p>
-<script type="math/tex; mode=display">R_{ij}=\frac{\sum_{k=1}^n \frac{1}{R_k}}{\frac{1}{R_iR_j}}(i \neq j)</script><p>$\Delta \rightarrow Y$ 只有三端时才成立。</p>
+      </div>
 
       
+    <div class="collection-year">
+      <span class="collection-header">2021</span>
     </div>
 
-    
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2021-03-28T21:44:37+08:00"
+              content="2021-03-28">
+          03-28
+        </time>
+      </div>
 
-    <footer class="post-footer">
-        <div class="post-eof"></div>
+      <div class="post-title">
+          <a class="post-title-link" href="/2021/03/28/%E5%9B%9B%E7%AB%AF%E7%BA%BF%E6%80%A7%E7%94%B5%E9%98%BB%E7%BD%91%E7%BB%9C%E7%9A%84%E7%AD%89%E6%95%88%E5%8F%98%E6%8D%A2/" itemprop="url">
+            <span itemprop="name">四端线性电阻网络的等效变换</span>
+          </a>
+      </div>
+
       
-    </footer>
+    </header>
   </article>
-</div>
 
-
-
-
+    </div>
+  </div>
+  
+  
+  
 
 
 <script>
@@ -343,38 +305,7 @@
 
 
 
-  <script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'none'
-      },
-      options: {
-        renderActions: {
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              const target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
-    script.defer = true;
-    document.head.appendChild(script);
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.typesetClear();
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
+  
 
 
 </body>
