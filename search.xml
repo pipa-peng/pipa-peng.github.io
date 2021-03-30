@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>四端线性电阻网络的等效变换</title>
+    <url>/2021/03/28/%E5%9B%9B%E7%AB%AF%E7%BA%BF%E6%80%A7%E7%94%B5%E9%98%BB%E7%BD%91%E7%BB%9C%E7%9A%84%E7%AD%89%E6%95%88%E5%8F%98%E6%8D%A2/</url>
+    <content><![CDATA[<h4 id="Y-Delta-变换的推广"><a href="#Y-Delta-变换的推广" class="headerlink" title="$Y-\Delta$ 变换的推广"></a>$Y-\Delta$ 变换的推广</h4><p>引入：三端线性电阻网络的等效变换</p>
+<script type="math/tex; mode=display">Y \rightarrow \Delta:\ \begin{cases} R_{12}=\frac{R_1R_2+R_2R_3+R_3R_1}{R_3} \\ R_{23}=\frac{R_1R_2+R_2R_3+R_3R_1}{R_1}\\ R_{13}=\frac{R_1R_2+R_2R_3+R_3R_1}{R_2} \end{cases}</script><script type="math/tex; mode=display">\Delta \rightarrow Y:\ \begin{cases} R_{1}=\frac{R_{12}R_{13}}{R_{12}+R_{23}+R_{13}} \\ R_{2}=\frac{R_{12}R_{23}}{R_{12}+R_{23}+R_{13}}\\ R_{3}=\frac{R_{13}R_{23}}{R_{12}+R_{23}+R_{13}} \end{cases}</script><p>四端线性电阻网络的等效变换：</p>
+<p><img src="/2021/03/28/%E5%9B%9B%E7%AB%AF%E7%BA%BF%E6%80%A7%E7%94%B5%E9%98%BB%E7%BD%91%E7%BB%9C%E7%9A%84%E7%AD%89%E6%95%88%E5%8F%98%E6%8D%A2/IMG_0385.jpg" alt="IMG_0385"></p>
+<p>等效条件：已知 $\varphi_i(i=1,2,3,4)$（各点电势），使 $I_i(i=1,2,3,4)$ （各点流出的总电流）</p>
+<p>在左图中，有方程：</p>
+<script type="math/tex; mode=display">\begin{cases} \varphi_1 - \varphi_2 = I_1R_1-I_2R_2\\ \varphi_1 - \varphi_3 = I_1R_1-I_3R_3\\ \varphi_1 - \varphi_4 = I_1R_1-I_4R_4\\ I_1+I_2+I_3+I_4=0\end{cases}</script><p>由前三个方程得：</p>
+<script type="math/tex; mode=display">I_2=I_1 \cdot \frac{R_1}{R_2}+\frac{\varphi_2-\varphi_1}{R_2} \\ I_3=I_1 \cdot \frac{R_1}{R_3}+\frac{\varphi_3-\varphi_1}{R_3} \\ I_4=I_1 \cdot \frac{R_1}{R_4}+\frac{\varphi_4-\varphi_1}{R_4}</script><p>代入第四个方程得：</p>
+<script type="math/tex; mode=display">I_1(1+\frac{R_1}{R_2} +\frac{R_1}{R_3} +\frac{R_1}{R_4})+\frac{\varphi_2-\varphi_1}{R_2} +\frac{\varphi_3-\varphi_1}{R_3} +\frac{\varphi_4-\varphi_1}{R_4} =0</script><p>解得：</p>
+<script type="math/tex; mode=display">I_1=\frac{\varphi_1(R_2R_3+R_2R_4+R_3R_4)-\varphi_2R_3R_4-\varphi_3R_2R_4-\varphi_4R_2R_3}{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}</script><p>在右图中：</p>
+<script type="math/tex; mode=display">\begin{cases}\varphi_1-\varphi_2=I_{12}R_{12}\\ \varphi_1-\varphi_3=I_{13}R_{13}\\ \varphi_4-\varphi_1=I_{41}R_{41}\end{cases}</script><p>解得：</p>
+<script type="math/tex; mode=display">I_1=\varphi_1(\frac{1}{R_{12}}+\frac{1}{R_{13}}+\frac{1}{R_{41}})-\frac{\varphi_2}{R_{12}}-\frac{\varphi_3}{R_{13}}-\frac{\varphi_4}{R_{41}}</script><p>由等效条件，应有 $\forall \varphi_i(i=1,2,3,4),I_1$ 在左、右图中相等。</p>
+<p>故有对于相同的 $\varphi_i(i=1,2,3,4)$ 在左右图 $I_1$ 中对应的系数相同，即：</p>
+<script type="math/tex; mode=display">\begin{cases} \frac{R_2R_3+R_2R_4+R_3R_4}{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}= \frac{1}{R_{12}}+\frac{1}{R_{13}}+\frac{1}{R_{41}}\\ -\frac{R_3R_4}{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}=-\frac{1}{R_{12}}\\ -\frac{R_2R_4}{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}=-\frac{1}{R_{13}}\\ -\frac{R_2R_3}{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}=-\frac{1}{R_{41}}\end{cases}</script><p>可解得：</p>
+<script type="math/tex; mode=display">R_{12}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_3R_4}\\ R_{13}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_2R_4} \\ R_{41}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_2R_3}</script><p>同理可得：</p>
+<script type="math/tex; mode=display">R_{23}= \frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_1R_4} \\ R_{42}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_1R_3} \\ R_{34}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_1R_2}</script><p>$Y \rightarrow \Delta$ 变换推广到 $n$ 端：</p>
+<script type="math/tex; mode=display">R_{ij}=\frac{\sum_{k=1}^n \frac{1}{R_k}}{\frac{1}{R_iR_j}}(i \neq j)</script><p>$\Delta \rightarrow Y$ 只有三端时才成立。</p>
+]]></content>
+      <tags>
+        <tag>Physics</tag>
+      </tags>
+  </entry>
+</search>

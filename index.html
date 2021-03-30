@@ -21,7 +21,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
@@ -112,6 +112,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -125,11 +126,37 @@
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="tags fa-fw"></i>Tags</a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="categories fa-fw"></i>Categories</a></li>
         <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="archive fa-fw"></i>Archives</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
         
@@ -234,10 +261,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-03-28 21:44:37 / Modified: 21:48:33" itemprop="dateCreated datePublished" datetime="2021-03-28T21:44:37+08:00">2021-03-28</time>
+      <time title="Created: 2021-03-28 21:44:37" itemprop="dateCreated datePublished" datetime="2021-03-28T21:44:37+08:00">2021-03-28</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-03-30 19:19:24" itemprop="dateModified" datetime="2021-03-30T19:19:24+08:00">2021-03-30</time>
+      </span>
 
   
 </div>
@@ -251,7 +284,7 @@
     <div class="post-body" itemprop="articleBody">
           <h4 id="Y-Delta-变换的推广"><a href="#Y-Delta-变换的推广" class="headerlink" title="$Y-\Delta$ 变换的推广"></a>$Y-\Delta$ 变换的推广</h4><p>引入：三端线性电阻网络的等效变换</p>
 <script type="math/tex; mode=display">Y \rightarrow \Delta:\ \begin{cases} R_{12}=\frac{R_1R_2+R_2R_3+R_3R_1}{R_3} \\ R_{23}=\frac{R_1R_2+R_2R_3+R_3R_1}{R_1}\\ R_{13}=\frac{R_1R_2+R_2R_3+R_3R_1}{R_2} \end{cases}</script><script type="math/tex; mode=display">\Delta \rightarrow Y:\ \begin{cases} R_{1}=\frac{R_{12}R_{13}}{R_{12}+R_{23}+R_{13}} \\ R_{2}=\frac{R_{12}R_{23}}{R_{12}+R_{23}+R_{13}}\\ R_{3}=\frac{R_{13}R_{23}}{R_{12}+R_{23}+R_{13}} \end{cases}</script><p>四端线性电阻网络的等效变换：</p>
-<p><img src="IMG_0385.jpg" alt="图片"></p>
+<p><img src="/2021/03/28/%E5%9B%9B%E7%AB%AF%E7%BA%BF%E6%80%A7%E7%94%B5%E9%98%BB%E7%BD%91%E7%BB%9C%E7%9A%84%E7%AD%89%E6%95%88%E5%8F%98%E6%8D%A2/IMG_0385.jpg" alt="IMG_0385"></p>
 <p>等效条件：已知 $\varphi_i(i=1,2,3,4)$（各点电势），使 $I_i(i=1,2,3,4)$ （各点流出的总电流）</p>
 <p>在左图中，有方程：</p>
 <script type="math/tex; mode=display">\begin{cases} \varphi_1 - \varphi_2 = I_1R_1-I_2R_2\\ \varphi_1 - \varphi_3 = I_1R_1-I_3R_3\\ \varphi_1 - \varphi_4 = I_1R_1-I_4R_4\\ I_1+I_2+I_3+I_4=0\end{cases}</script><p>由前三个方程得：</p>
@@ -332,6 +365,7 @@
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
+<script src="/js/local-search.js"></script>
 
 
 
@@ -343,38 +377,65 @@
 
 
 
-  <script>
+  
+
+<script>
   if (typeof MathJax === 'undefined') {
+    // window.MathJax = {
+    //   loader: {
+    //
+    //     source: {
+    //       '[tex]/amsCd': '[tex]/amscd',
+    //       '[tex]/AMScd': '[tex]/amscd'
+    //     }
+    //   },
+    //   tex: {
+    //     inlineMath: {'[+]': [['$', '$']]},
+    //
+    //     tags: 'ams'
+    //   },
+    //   options: {
+    //     renderActions: {
+    //       findScript: [10, doc => {
+    //         document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+    //           const display = !!node.type.match(/; *mode=display/);
+    //           const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+    //           const text = document.createTextNode('');
+    //           node.parentNode.replaceChild(text, node);
+    //           math.start = {node: text, delim: '', n: 0};
+    //           math.end = {node: text, delim: '', n: 0};
+    //           doc.math.push(math);
+    //         });
+    //       }, '', false],
+    //       insertedScript: [200, () => {
+    //         document.querySelectorAll('mjx-container').forEach(node => {
+    //           let target = node.parentNode;
+    //           if (target.nodeName.toLowerCase() === 'li') {
+    //             target.parentNode.classList.add('has-jax');
+    //           }
+    //         });
+    //       }, '', false]
+    //     }
+    //   }
+    // };
     window.MathJax = {
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'none'
-      },
-      options: {
-        renderActions: {
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              const target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
       }
     };
-    const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
-    script.defer = true;
-    document.head.appendChild(script);
+    (function () {
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@2.7.8/unpacked/MathJax.js?config=TeX-MML-AM_CHTML';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
   } else {
     MathJax.startup.document.state(0);
-    MathJax.typesetClear();
     MathJax.texReset();
     MathJax.typeset();
   }
 </script>
-
 
 
 </body>
