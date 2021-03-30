@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>物理竞赛电子书</title>
-    <url>/2021/03/30/%E7%89%A9%E7%90%86%E7%AB%9E%E8%B5%9B%E4%B9%A6%E7%B1%8D/</url>
-    <content><![CDATA[<p><a href="/download/物理学难题集萃.pdf">物理学难题集萃</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>信息自编题--PASSWORD系列</title>
     <url>/2021/03/30/%E4%BF%A1%E6%81%AF%E8%87%AA%E7%BC%96%E9%A2%98-PASSWORD%E7%B3%BB%E5%88%97/</url>
     <content><![CDATA[<p>题目下载：<a href="/download/PASSWORD.pdf">PASSWORD系列题目</a></p>
 ]]></content>
       <tags>
-        <tag>-Computer</tag>
+        <tag>Computer</tag>
       </tags>
   </entry>
   <entry>
@@ -34,6 +28,15 @@
 <script type="math/tex; mode=display">R_{12}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_3R_4}\\ R_{13}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_2R_4} \\ R_{41}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_2R_3}</script><p>同理可得：</p>
 <script type="math/tex; mode=display">R_{23}= \frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_1R_4} \\ R_{42}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_1R_3} \\ R_{34}=\frac{R_1R_2R_3+R_1R_2R_4+R_1R_3R_4+R_2R_3R_4}{R_1R_2}</script><p>$Y \rightarrow \Delta$ 变换推广到 $n$ 端：</p>
 <script type="math/tex; mode=display">R_{ij}=\frac{\sum_{k=1}^n \frac{1}{R_k}}{\frac{1}{R_iR_j}}(i \neq j)</script><p>$\Delta \rightarrow Y$ 只有三端时才成立。</p>
+]]></content>
+      <tags>
+        <tag>Physics</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>物理竞赛电子书</title>
+    <url>/2021/03/30/%E7%89%A9%E7%90%86%E7%AB%9E%E8%B5%9B%E4%B9%A6%E7%B1%8D/</url>
+    <content><![CDATA[<p><a href="/download/物理学难题集萃.pdf">物理学难题集萃</a><br><a href="/download/奥赛物理题选.pdf">奥赛物理题选</a></p>
 ]]></content>
       <tags>
         <tag>Physics</tag>
